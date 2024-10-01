@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Horizon Real State</title>
+    <style>
+      /*estulos globales*/
+
+      ul {
+        list-style-type: none;
+      }
+
+      html {
+        font-size: 62.5%;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+      body {
+        margin: 0;
+        font-family: "Montserrat", sans-serif;
+
+        font-size: 1.6rem;
+        line-height: 1.8;
+
+        background-image: linear-gradient(
+          270deg,
+          #3917c2 0%,
+          #e70d69 50%,
+          #4787d9 100%
+        );
+        background-color: #d91616;
+        background-image: linear-gradient(
+          135deg,
+          #d91616 0%,
+          #a04b7c 50%,
+          #2b86c5 100%
+        );
+        background-color: #d91616;
+        background-image: linear-gradient(
+          135deg,
+          #d91616 0%,
+          #a04b7c 50%,
+          #2b86c5 100%
+        );
+        background-color: #d91616;
+        background-image: linear-gradient(
+          135deg,
+          #d91616 0%,
+          #a04b7c 50%,
+          #2b86c5 100%
+        );
+        background-color: #ffffff;
+        background-image: linear-gradient(
+          180deg,
+          #ffffff 0%,
+          #6284ff 50%,
+          #ff0000 100%
+        );
+        background-color: #ffffff;
+        background-image: linear-gradient(
+          315deg,
+          #ffffff 0%,
+          #6284ff 50%,
+          #ff0000 100%
+        );
+        background: linear-gradient(
+          90deg,
+          rgba(2, 0, 0.6, 1) 0%,
+          rgba(9, 9, 121, 1) 35%,
+          rgba(0, 212, 255, 1) 100%
+        );
+        background: linear-gradient(
+          90deg,
+          rgba(2, 0, 0.6, 1) 0%,
+          rgb(29, 29, 159) 35%,
+          rgb(255, 0, 47) 100%
+        );
+        background: linear-gradient(
+          110deg,
+          rgb(0, 0, 0) 0%,
+          rgb(43, 153, 222) 35%,
+          rgb(255, 0, 47) 100%
+        );
+      }
+      p {
+        font-size: 1.8rem;
+        color: white;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-weight: 700;
+        margin: 2rem 0;
+        color: white;
+      }
+      h1 {
+        font-size: 5rem;
+      }
+      h2 {
+        font-size: 4.6rem;
+      }
+      h3 {
+        font-size: 3rem;
+      }
+      a {
+        text-decoration: none;
+        font-weight: 600;
+      }
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+      .contenedor {
+        max-width: 120rem;
+        margin: 0 auto;
+        width: 80%;
+      }
+      section {
+        border: thin solid black;
+        border-radius: 2rem;
+        border-style: solid;
+        padding: 4rem;
+        margin: 10rem 0;
+        background-color: rgb(0, 0, 0, 0.2);
+        box-shadow: 0 0.4rem 1.5rem rgb(0, 0, 0, 0.5);
+      }
+
+      /*menu header*/
+      header {
+        background-color: #1982c4;
+        background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+
+        display: flex;
+        justify-content: space-between;
+        padding: 3rem 9rem;
+      }
+      /*nav menu secciones*/
+      .nav-menu-secciones a {
+        color: white;
+        transition: transform 0.5s ease;
+        padding: 0.5rem;
+        font-size: 1.8rem;
+        font-weight: 600;
+      }
+      .nav-menu-secciones {
+        display: flex;
+        gap: 2.5rem;
+        align-items: center;
+      }
+      .nav-menu-secciones a:hover {
+        background-color: #0a3b59;
+
+        transform: scale(1.2);
+      }
+      /*nav redes menu*/
+      .nav-redes-menu {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+      }
+      .nav-redes-menu img {
+        width: 3rem;
+        height: 3rem;
+      }
+      .nav-redes-menu a {
+        transition: transform 0.5s ease;
+      }
+      .nav-redes-menu a:hover {
+        transform: scale(1.4);
+      }
+
+      /*ruleta de imaganes*/
+      .carrusel {
+        margin: 5rem 0;
+        width: 100%;
+        height: 50rem;
+        position: relative;
+        overflow: hidden;
+      }
+      .slides {
+        display: flex;
+        max-width: 100%;
+        height: 100%;
+        background-color: rgb(87, 87, 109);
+        animation: mover 30s infinite;
+      }
+
+      @keyframes mover {
+        0% {
+          transform: translateX(0);
+        }
+        33% {
+          transform: translateX(-168%);
+        }
+        66% {
+          transform: translateX(-250%);
+        }
+
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+      .slides img {
+        border: thin solid black;
+      }
+      /*Titulo principal*/
+      .box-contendor-titulo {
+        background-color: #1982c4;
+        background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+
+        position: relative;
+        overflow: hidden;
+        padding: 4rem;
+      }
+      .box-titulo-principal {
+        display: flex;
+        animation: moverTitulo 15s infinite;
+      }
+      .box-titulo-principal img {
+        width: 12rem;
+        height: 12rem;
+        margin-right: 0.5rem;
+      }
+      .titulo-principal {
+        text-align: center;
+        color: #edf2f4;
+        font-weight: 500;
+        font-size: 9rem;
+
+        line-height: normal;
+        text-shadow: 8px 8px 8px rgb(0, 0, 0, 0.9);
+      }
+      @keyframes moverTitulo {
+        0% {
+          transform: translateX(-100%);
+        }
+        20% {
+          transform: translate(20%);
+        }
+        33% {
+          transform: translate(33%);
+        }
+        66% {
+          transform: translateX(80%);
+        }
+
+        100% {
+          transform: translateX(110%);
+        }
+      }
+      .titulo-principal span {
+        display: block;
+        text-align: center;
+        font-size: 3rem;
+        color: #edf2f4;
+      }
+      /*Nosotros*/
+
+      .box-nosotros-flex {
+        display: flex;
+        gap: 5rem;
+        align-items: center;
+      }
+
+      .video-nosotros {
+        display: block;
+        width: 55rem;
+        height: 30rem;
+      }
+      /*boton menu*/
+      .btn-menu {
+        display: inline-block;
+        color: white;
+        border-radius: 1rem;
+        padding: 1rem;
+        background-color: #ffca3a;
+        background-color: #d8315b;
+
+        border: thin solid black;
+        font-size: 1.6rem;
+        transition: transform 0.5s ease;
+        margin: 5rem 3rem 0 0;
+      }
+      .btn-menu:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0.4rem 1.5rem rgb(0, 0, 0, 0.8);
+      }
+      /*servicios*/
+      .box-servicios {
+        display: flex;
+        gap: 2rem;
+      }
+      .box-servicios iframe {
+        display: block;
+        width: 55rem;
+        height: 30rem;
+      }
+      .box-servicios p {
+        width: 50rem;
+      }
+      /*Seccion Calculadora*/
+      .box-calcu-flex {
+        display: flex;
+        gap: 4rem;
+        justify-content: center;
+        border-radius: 1rem;
+      }
+      .box-calcu-flex a {
+        display: inline-block;
+        text-decoration: underline;
+
+        padding: 1rem;
+
+        color: black;
+        font-size: 1.5rem;
+        text-align: center;
+        transition: transform 0.3s ease;
+        background-color: white;
+      }
+      .box-calcu-flex a:hover {
+        border: 1rem;
+
+        text-decoration: underline;
+        transform: scale(1.1);
+      }
+      .box-calcu-flex p {
+        display: block;
+        width: 60rem;
+      }
+
+      .box-calculadora {
+        text-align: center;
+        background-color: #1982c4;
+        width: 50rem;
+        height: 60rem;
+        border-radius: 1rem;
+      }
+      .box-calculadora iframe {
+        display: block;
+        height: 100%;
+        width: 100%;
+        background-position: center;
+      }
+
+      /*Contacto*/
+
+      .contacto-flex {
+        padding: 0 3rem;
+        display: flex;
+        gap: 3rem;
+        flex-direction: column-reverse;
+
+        align-items: center;
+
+        border-radius: 1rem;
+        margin-left: 3rem;
+      }
+      .contacto-flex iframe {
+        display: block;
+        width: 100%;
+        height: 50rem;
+      }
+      .box-contacto-enlace {
+        background-color: #1982c4;
+        text-align: center;
+        width: 100%;
+      }
+      .box-contacto-enlace a {
+        display: inline-block;
+        color: white;
+        font-size: 1.8rem;
+        text-decoration: underline;
+        transition: transform 0.3s ease;
+        padding: 1rem;
+      }
+      .box-contacto-enlace a:hover {
+        transform: scale(1.2);
+      }
+      .contacto-flex img {
+        width: 30rem;
+        height: 20rem;
+        border-radius: 1rem 1rem 0 0;
+      }
+
+      /*footer*/
+      footer {
+        background-color: #1982c4;
+        background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+
+        padding: 2rem 0;
+      }
+      .nav-redes-footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 0.2rem;
+      }
+      .nav-redes-footer a {
+        transition: transform 0.5s ease;
+      }
+      .nav-redes-footer a:hover {
+        transform: scale(1.3);
+      }
+      .nav-redes-footer a img {
+        width: 3.5rem;
+        height: 3.5rem;
+      }
+      footer p {
+        text-align: center;
+      }
+
+      hr {
+        border: none;
+        height: 1px;
+        background: black;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
+      }
+      /*animacion de background*/
+
+      .box-animacion {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: linear-gradient(
+          130deg,
+          rgb(0, 0, 0) 0%,
+          rgb(43, 153, 222) 35%,
+          rgb(255, 0, 47) 100%
+        );
+      }
+      .boxes div {
+        position: absolute;
+        width: 6rem;
+        height: 6rem;
+        background-color: transparent;
+        border: 0.6rem solid rgba(255, 255, 255, 0.8);
+      }
+      .boxes div:nth-child(1) {
+        top: 12%;
+        left: 42%;
+        animation: animate 10s linear infinite;
+      }
+      .boxes div:nth-child(2) {
+        top: 70%;
+        left: 50%;
+        animation: animate 7s linear infinite;
+      }
+      .boxes div:nth-child(3) {
+        top: 17%;
+        left: 6%;
+        animation: animate 9s linear infinite;
+      }
+      .boxes div:nth-child(4) {
+        top: 20%;
+        left: 60%;
+        animation: animate 10s linear infinite;
+      }
+      .boxes div:nth-child(5) {
+        top: 67%;
+        left: 10%;
+        animation: animate 6s linear infinite;
+      }
+      .boxes div:nth-child(6) {
+        top: 80%;
+        left: 70%;
+        animation: animate 12s linear infinite;
+      }
+      .boxes div:nth-child(7) {
+        top: 60%;
+        left: 80%;
+        animation: animate 15s linear infinite;
+      }
+      .boxes div:nth-child(8) {
+        top: 32%;
+        left: 25%;
+        animation: animate 16s linear infinite;
+      }
+      .boxes div:nth-child(9) {
+        top: 90%;
+        left: 25%;
+        animation: animate 9s linear infinite;
+      }
+      .boxes div:nth-child(10) {
+        top: 20%;
+        left: 80%;
+        animation: animate 5s linear infinite;
+      }
+      @keyframes animate {
+        0% {
+          transform: scale(0) translateY(0) rotate(0);
+          opacity: 1;
+        }
+        100% {
+          transform: scale(1.3) translateY(-9rem) rotate(360deg);
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header id="menu">
+      <nav class="nav-menu-secciones">
+        <a href="#nosotros">Nosotros</a>
+
+        <a href="#servicios">Servicios</a>
+
+        <a href="#calculadora">Calculadora</a>
+
+        <a href="#contacto">Contactanos</a>
+      </nav>
+      <nav class="nav-redes-menu">
+        <a href="https://www.whatsapp.com/" target="_blank"
+          ><img
+            src="https://github.com/marc2777/final-web/blob/main/imgs/icons8-whatsapp-messenger-is-a-freeware,-cross-platform-messaging-and-voice-over-ip-service-24.png?raw=true"
+            alt=""
+        /></a>
+
+        <a href="https://www.facebook.com/" target="_blank"
+          ><img
+            src="https://github.com/marc2777/final-web/blob/main/imgs/facebook%20(1).png?raw=true"
+            alt=""
+        /></a>
+
+        <a href="https://instagram.com/" target="_blank"
+          ><img
+            src="https://github.com/marc2777/final-web/blob/main/imgs/Instagram%20(1).png?raw=true"
+            alt=""
+        /></a>
+
+        <a href="https://www.youtube.com/" target="_blank"
+          ><img
+            src="https://github.com/marc2777/final-web/blob/main/imgs/youtube%20(1).png?raw=true"
+            alt=""
+        /></a>
+        <a href="https://www.tiktok.com/" target="_blank"
+          ><img
+            src="https://github.com/marc2777/final-web/blob/main/imgs/tiktok1.png?raw=true"
+            alt=""
+        /></a>
+      </nav>
+    </header>
+    <div class="carrusel">
+      <div class="slides">
+        <img
+          src="https://github.com/marc2777/final-web/blob/main/imgs/casa-1.jpg?raw=true"
+          alt=""
+        />
+        <img
+          src="https://raw.githubusercontent.com/marc2777/final-web/refs/heads/main/imgs/casa-2.webp"
+          alt=""
+        />
+        <img
+          src="https://raw.githubusercontent.com/marc2777/final-web/refs/heads/main/imgs/casa-lujo.webp"
+          alt=""
+        />
+        <img
+          src="https://raw.githubusercontent.com/marc2777/final-web/refs/heads/main/imgs/casa-cafe.webp"
+          alt=""
+        />
+        <img
+          src="https://raw.githubusercontent.com/marc2777/final-web/refs/heads/main/imgs/casa-piedra.webp"
+          alt=""
+        />
+        <img
+          src="https://raw.githubusercontent.com/marc2777/final-web/refs/heads/main/imgs/casa-6.webp"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="box-animacion">
+      <div class="boxes">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="box-contendor-titulo">
+        <div class="box-titulo-principal">
+          <h1 class="titulo-principal">Horizon<span>Real Estate</span></h1>
+          <img
+            src="https://github.com/marc2777/final-web/blob/main/imgs/icono-logo.png?raw=true"
+            alt="icono empresa"
+          />
+        </div>
+      </div>
+      <main class="contenedor">
+        <section class="box-nosotros" id="nosotros">
+          <h2>Sobre Nosotros</h2>
+          <div class="box-nosotros-flex">
+            <p>
+              En Horizon, nos especializamos en ofrecer soluciones inmobiliarias
+              que se adaptan a tus necesidades. Ya sea que busques tu hogar
+              ideal o una inversión estratégica, nuestro equipo está
+              comprometido con brindarte un servicio personalizado, confiable y
+              transparente. Conocemos el mercado y trabajamos para hacer de tu
+              experiencia una oportunidad exitosa y sin complicaciones.
+            </p>
+            <div class="box-video-nosotros">
+              <iframe
+                class="video-nosotros"
+                src="https://www.youtube.com/embed/4e-MFQzyLfg?si=USKsPeg741E6Z8N0"
+                frameborder="0"
+              >
+              </iframe>
+            </div>
+          </div>
+          <a class="btn-menu" href="#menu">Menú principal</a>
+        </section>
+        <section id="servicios">
+          <h2>Servicios</h2>
+          <div class="box-servicios">
+            <iframe
+              allowfullscreen
+              src="https://www.bankinter.com/blog/finanzas-personales/como-elegir-casa-para-comprar"
+              frameborder="0"
+              scrolling="no"
+            ></iframe>
+            <p>
+              Nuestra inmobiliaria se dedica a la compra, venta y alquiler de
+              propiedades, ofreciendo asesoría personalizada y gestionando todos
+              los trámites legales. También brindamos servicios de
+              administración de propiedades e inversión inmobiliaria para
+              maximizar el valor de tu patrimonio.
+            </p>
+          </div>
+          <a class="btn-menu" href="#menu">Menú principal</a>
+        </section>
+        <section id="calculadora">
+          <h2>Prueba Nuestra Calculadora</h2>
+
+          <div class="box-calcu-flex">
+            <div class="box-calculadora">
+              <iframe src="/calculadoraHorizon.html" frameborder="0"></iframe>
+
+              <a
+                style="margin-top: 1rem"
+                href="https://github.com/marc2777/final-web/raw/main/calcuHorizon.zip"
+                download=""
+                >Descargar Calculadora</a
+              >
+            </div>
+            <p>
+              Nuestra calculadora te permite estimar de manera rápida y precisa
+              los pagos mensuales de tu futura propiedad. Simplemente ingresa el
+              valor del inmueble, el monto del préstamo y la tasa de interés, y
+              obtén un cálculo instantáneo. Esta herramienta está diseñada para
+              ayudarte a planificar y tomar decisiones informadas al momento de
+              comprar tu hogar ideal.
+            </p>
+          </div>
+          <div style="text-align: right">
+            <a class="btn-menu" href="#menu">Menú principal</a>
+          </div>
+        </section>
+
+        <section id="contacto" class="seccion-contacto">
+          <h2>Contáctanos a través del formulario</h2>
+
+          <div class="contacto-flex">
+            <div class="box-contacto-enlace">
+              <iframe
+                src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQxVSSp3AyCTcR1MWWvwr3rV_40joD8IQN_GOUXd0LPS7BzWSDEyTwaj8iw4JZhDBq8LUtSpJJ0rhAK/pubhtml?widget=true&amp;headers=false"
+              ></iframe>
+              <a
+                href="https://docs.google.com/spreadsheets/d/1ZuXUpTp96Y6Sd44jjdgQgL6-0vGjWoGo0p_8D-8mzEw/edit?usp=sharing"
+                target="_blank"
+                >contactanos</a
+              >
+            </div>
+
+            <p>
+              ¿Desea más información de nuestros servicios o desea buscar una
+              Oficina Horizon que le atienda? Mándenos un correo con sus datos
+              para referirlo con la oficina más cercana a su propiedad.
+              Agradecemos su preferencia, en Horizon, estamos para servirle.
+            </p>
+          </div>
+          <a class="btn-menu" href="#menu">Menú principal</a>
+        </section>
+      </main>
+      <footer>
+        <nav class="nav-redes-footer">
+          <a href="https://www.whatsapp.com/" target="_blank"
+            ><img
+              src="https://github.com/marc2777/final-web/blob/main/imgs/icons8-whatsapp-messenger-is-a-freeware,-cross-platform-messaging-and-voice-over-ip-service-24.png?raw=true"
+              alt=""
+          /></a>
+
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img
+              src="https://github.com/marc2777/final-web/blob/main/imgs/facebook%20(1).png?raw=true"
+              alt=""
+          /></a>
+
+          <a href="https://instagram.com/" target="_blank"
+            ><img
+              src="https://github.com/marc2777/final-web/blob/main/imgs/Instagram%20(1).png?raw=true"
+              alt=""
+          /></a>
+
+          <a href="https://www.youtube.com/" target="_blank"
+            ><img
+              src="https://github.com/marc2777/final-web/blob/main/imgs/youtube%20(1).png?raw=true"
+              alt=""
+          /></a>
+          <a href="https://www.tiktok.com/" target="_blank"
+            ><img
+              src="https://github.com/marc2777/final-web/blob/main/imgs/tiktok1.png?raw=true"
+              alt=""
+          /></a>
+        </nav>
+        <hr />
+
+        <p>Todos los derechos reservados © Horizon Marco 2024</p>
+      </footer>
+    </div>
+  </body>
+</html>
