@@ -438,6 +438,9 @@
         background: black;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
       }
+      .box-btn-menu {
+        text-align: right;
+      }
       /*animacion de background*/
 
       .box-animacion {
@@ -517,6 +520,297 @@
         100% {
           transform: scale(1.3) translateY(-9rem) rotate(360deg);
           opacity: 0;
+        }
+      }
+      /*responsiv */
+      /* adaptacion tabelt */
+      @media (max-width: 768px) {
+        header {
+          flex-direction: column;
+          gap: 2rem;
+          padding: 2rem 1rem;
+        }
+        .nav-menu-secciones {
+          flex-direction: column;
+          align-items: center;
+          border-bottom: thin solid rgba(0, 0, 0, 0.8);
+        }
+        .nav-redes-menu {
+          display: flex;
+          justify-content: space-around;
+        }
+        .nav-redes-menu a {
+        }
+        .nav-redes-menu a img {
+          width: 3rem;
+          height: 3rem;
+        }
+
+        /*carrusel/*/
+
+        .carrusel {
+          height: 30rem;
+        }
+        @keyframes mover {
+          0% {
+            transform: translateX(0);
+          }
+          33% {
+            transform: translateX(-200%);
+          }
+          66% {
+            transform: translateX(-310%);
+          }
+
+          100% {
+            transform: translateX(0);
+          }
+        }
+        /*titulo principal*/
+        .titulo-principal {
+          font-size: 5.5rem;
+        }
+        /*nosotros*/
+        .box-nosotros-flex {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .box-nosotros-flex iframe {
+          width: 100%;
+          height: 100%;
+        }
+        .box-video-nosotros {
+          width: 100%;
+          height: 30rem;
+        }
+        /*servicios*/
+
+        .box-servicios {
+          flex-direction: column;
+        }
+        .box-servicios iframe {
+          display: block;
+          width: 100%;
+          height: 40rem;
+          margin: 0 auto;
+        }
+        section {
+          padding: 2rem;
+        }
+        .box-servicios p {
+          width: 100%;
+        }
+        .box-btn-menu {
+          text-align: center;
+        }
+        .box-btn-menu a {
+          margin: 2rem 0;
+          text-align: end;
+        }
+        /*calcu*/
+        .box-calcu-flex {
+          flex-direction: column;
+          width: 100%;
+        }
+        .box-calcu-flex div iframe {
+          width: 100%;
+          height: 80rem;
+        }
+        .box-calcu-flex p {
+          width: 100%;
+          padding: 3rem;
+        }
+        .box-calculadora {
+          width: 100%;
+          height: 60%;
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .seccion-calculadora {
+          padding: 1rem 0rem;
+        }
+        .contenedor {
+          max-width: 120rem;
+          margin: 0 auto;
+          width: 90%;
+        }
+        /*seccion contacto*/
+        .seccion-contacto {
+          padding: 0;
+        }
+        .contacto-flex {
+          margin: 0;
+          padding: 0;
+        }
+        .contacto-flex p {
+          padding: 1rem;
+        }
+        .contacto-flex iframe {
+          width: 100%;
+        }
+        h2 {
+          padding: 1rem 2rem;
+          font-size: 4rem;
+          text-align: center;
+        }
+      }
+
+      /* celular */
+      @media (max-width: 480px) {
+        h2 {
+          font-size: 2.4rem;
+          text-align: center;
+        }
+        /*header*/
+        header {
+          flex-direction: column;
+          gap: 2rem;
+          padding: 2rem 1rem;
+        }
+        .nav-menu-secciones {
+          flex-direction: column;
+          align-items: center;
+          border-bottom: thin solid rgba(0, 0, 0, 0.8);
+        }
+        .nav-redes-menu {
+          display: flex;
+          justify-content: space-around;
+        }
+        .nav-redes-menu a {
+        }
+        .nav-redes-menu a img {
+          width: 3rem;
+          height: 3rem;
+        }
+        /*carrusel/*/
+
+        .carrusel {
+          height: 30rem;
+        }
+        @keyframes mover {
+          0% {
+            transform: translateX(0);
+          }
+          33% {
+            transform: translateX(-300%);
+          }
+          66% {
+            transform: translateX(-550%);
+          }
+
+          100% {
+            transform: translateX(0);
+          }
+        }
+        /*titulo principal*/
+        .titulo-principal {
+          font-size: 5.5rem;
+        }
+        @keyframes moverTitulo {
+          0% {
+            transform: translateX(-100%);
+          }
+          20% {
+            transform: translate(5%);
+          }
+          33% {
+            transform: translate(10%);
+          }
+          66% {
+            transform: translateX(60%);
+          }
+
+          100% {
+            transform: translateX(120%);
+          }
+        }
+        /*nosotros*/
+        .box-nosotros-flex {
+          flex-direction: column;
+          text-align: center;
+        }
+        .box-nosotros h2 {
+          font-size: 2.4rem;
+          text-align: center;
+        }
+        .box-nosotros-flex iframe {
+          width: 100%;
+          height: 20rem;
+        }
+        .box-nosotros a {
+        }
+        /*servicios*/
+        .seccion-servicios h2 {
+          font-size: 2.4rem;
+          text-align: center;
+        }
+        .box-servicios {
+          flex-direction: column;
+        }
+        .box-servicios iframe {
+          display: block;
+          width: 25rem;
+          height: 40rem;
+          margin: 0 auto;
+        }
+        section {
+          padding: 1.5rem;
+        }
+        .box-servicios p {
+          width: 100%;
+        }
+        .box-btn-menu {
+          text-align: center;
+        }
+        .box-btn-menu a {
+          margin: 2rem 0;
+          text-align: end;
+        }
+        /*calcu*/
+        .box-calcu-flex {
+          flex-direction: column;
+          width: 100%;
+        }
+        .box-calcu-flex div iframe {
+          width: 100%;
+          height: 80rem;
+        }
+        .box-calcu-flex p {
+          width: 100%;
+          padding: 2rem;
+        }
+        .box-calculadora {
+          width: 100%;
+          height: 60%;
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .seccion-calculadora {
+          padding: 1rem 0rem;
+        }
+        .contenedor {
+          max-width: 120rem;
+          margin: 0 auto;
+          width: 90%;
+        }
+        /*seccion contacto*/
+        .seccion-contacto {
+          padding: 0;
+        }
+        .contacto-flex {
+          margin: 0;
+          padding: 0;
+        }
+        .contacto-flex p {
+          padding: 1rem;
+        }
+        .contacto-flex iframe {
+          width: 100%;
         }
       }
     </style>
@@ -635,16 +929,18 @@
               </iframe>
             </div>
           </div>
-          <a class="btn-menu" href="#menu">Menú principal</a>
+          <div class="box-btn-menu">
+            <a class="btn-menu" href="#menu">Menú principal</a>
+          </div>
         </section>
-        <section id="servicios">
+        <section id="servicios" class="seccion-servicios">
           <h2>Servicios</h2>
           <div class="box-servicios">
             <iframe
               allowfullscreen
               src="https://www.bankinter.com/blog/finanzas-personales/como-elegir-casa-para-comprar"
               frameborder="0"
-              scrolling="no"
+              scrolling="si"
             ></iframe>
             <p>
               Nuestra inmobiliaria se dedica a la compra, venta y alquiler de
@@ -654,9 +950,11 @@
               maximizar el valor de tu patrimonio.
             </p>
           </div>
-          <a class="btn-menu" href="#menu">Menú principal</a>
+          <div class="box-btn-menu">
+            <a class="btn-menu" href="#menu">Menú principal</a>
+          </div>
         </section>
-        <section id="calculadora">
+        <section id="calculadora" class="seccion-calculadora">
           <h2>Prueba Nuestra Calculadora</h2>
 
           <div class="box-calcu-flex">
@@ -664,6 +962,7 @@
               <iframe
                 src="https://marc2777.github.io/calcu-horizon/"
                 frameborder="0"
+                scrolling="no"
               ></iframe>
 
               <a
@@ -682,7 +981,7 @@
               comprar tu hogar ideal.
             </p>
           </div>
-          <div style="text-align: right">
+          <div class="box-btn-menu">
             <a class="btn-menu" href="#menu">Menú principal</a>
           </div>
         </section>
@@ -694,6 +993,8 @@
             <div class="box-contacto-enlace">
               <iframe
                 src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQxVSSp3AyCTcR1MWWvwr3rV_40joD8IQN_GOUXd0LPS7BzWSDEyTwaj8iw4JZhDBq8LUtSpJJ0rhAK/pubhtml?widget=true&amp;headers=false"
+                scrolling="yes"
+                allowfullscreen
               ></iframe>
               <a
                 href="https://docs.google.com/spreadsheets/d/1ZuXUpTp96Y6Sd44jjdgQgL6-0vGjWoGo0p_8D-8mzEw/edit?usp=sharing"
@@ -708,9 +1009,12 @@
               pondremos en contacto contigo lo antes posible. En Horizon,
               estamos listos para ayudarte a encontrar la propiedad perfecta o
               resolver cualquier duda sobre nuestros servicios. ¡Esperamos tu
-              mensaje! </p>
+              mensaje!
+            </p>
           </div>
-          <a class="btn-menu" href="#menu">Menú principal</a>
+          <div class="box-btn-menu">
+            <a class="btn-menu" href="#menu">Menú principal</a>
+          </div>
         </section>
       </main>
       <footer>
@@ -746,7 +1050,7 @@
         </nav>
         <hr />
 
-        <p>Todos los derechos reservados © Horizon Marco 2024</p>
+        <p>Todos los derechos reservados © Horizon Marco Rojas 2024</p>
       </footer>
     </div>
   </body>
